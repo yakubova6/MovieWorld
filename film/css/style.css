@@ -1,0 +1,250 @@
+header {
+  display: flex;
+  flex-flow: row nowrap;
+  text-align: center;
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+}
+
+
+/* начало поиска */
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 0 0 0;
+}
+
+form.searchform input[type=text] {
+  border-radius: 6px 0 0 6px;
+  padding: 10px 100px 10px 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+
+form.searchform button {
+  border-radius: 0 6px 6px 0;
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2a7ce8;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+}
+
+form.searchform button:hover {
+  background: #0b7dda;
+}
+
+form.searchform::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* конец поиска */
+
+/* начало меню */
+div.menu {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.menu a {
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+div.menu a:hover {
+  background-color: #777;
+}
+
+.menu {
+  flex: 1 1 auto;
+}
+
+
+.logo {
+  margin: 0 50px 0 30px;
+}
+
+/* список в навигации */
+.menu ul {
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 0;
+  list-style: none;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+  font-size: 16px;
+  line-height: 18px;
+  list-style: none;
+}
+
+.menu li {
+  margin-right: 30px;
+}
+
+.menu a,
+.menu .active {
+  display: block;
+  padding: 8px 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.search {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+
+/* кнопки */
+.voiti-button {
+  margin-right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-button {
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 6px;
+  background: #2a7ce8;
+  transition: all 0.2s ease;
+  font-size: 17px;
+  margin-bottom: 4px;
+}
+
+.header-button:active {
+  transform: scale(0.96);
+}
+
+/* конец кнопок */
+
+/* начало контента */
+body {
+  background-color: #022442;
+  color: #333;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  margin: 0;
+}
+
+h1 {
+  font-size: 48px;
+  text-align: center;
+  margin-top: 0;
+  padding-bottom: 60px;
+  color: #fff;
+}
+
+#content {
+  padding: 60px 0 0 0;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+.poster {
+  flex: 0 1 20%;
+}
+
+.video {
+  padding-top: 10px;
+}
+
+.block-text h2 {
+  font-size: 30px;
+  padding-bottom: 20px;
+  color: #fff;
+}
+
+.block-text nav {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.05;
+  color: #fff;
+}
+
+/* конец контента */
+
+/* начало формы */
+.form {
+  background-color: #022442;
+  padding: 20px;
+  width: 400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.reviews {
+  padding-top: 150px;
+}
+
+h3 {
+  padding-bottom: 20px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.form div {
+  width: 200%;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  resize: none;
+  background-color: #fff;
+  font-size: 16px;
+}
+
+
+/* кнопка отправить */
+.button {
+  color: #fff;
+  padding: 10px 319px;
+  border-radius: 6px;
+  background: #2a7ce8;
+  transition: all 0.2s ease;
+  font-size: 17px;
+}
+
+.button:active {
+  transform: scale(0.96);
+}
+
+/* конец кнопки отправить */
+
+/* конец формы */
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+  color: #717978;
+}
